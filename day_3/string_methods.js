@@ -21,7 +21,7 @@ console.log(str1.slice(0,4));       //index 4 will not be included      -- hell
 str1 = str1.slice(0,5);
 console.log(str1);          //hello
 
-str1 = str1.concat(str2);
+str1 = str1.concat(str2);   // create and returns new string ... the old string is not updating
 console.log(str1);          //helloworld
 
 str1 = str1.replace('h','H');
