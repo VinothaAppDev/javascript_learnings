@@ -2,6 +2,8 @@ let name = 'vinotha';
 let fam = 'ram';
 console.log("Length of name:", name.length);
 console.log("first element in fam is", fam[0]);
+fam[0] = 'R';               // it will not change String are IMMUTABLE !!!!
+console.log(fam);
 
 //template literal
 let aStatement = `This is a statement`;
