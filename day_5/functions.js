@@ -31,4 +31,22 @@ function voteEntry(name, age){
     console.log(name * age);            // ---> NaN not a number 
 }
 
-voteEntry("vinotha", 88);
+voteEntry("vinotha", 88);               // ---> NaN not a number
+
+
+/// there is NO function overload in js refer that md file
+
+
+function fun(){
+    console.log("hellooooo...");
+}
+
+fun();                                  // hellooooo...
+
+function fun(name){
+    console.log(`hello, ${name}`);
+}
+
+fun();                                  // 
+fun("vinotha");
+
