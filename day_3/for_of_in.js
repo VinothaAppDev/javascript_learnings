@@ -1,11 +1,11 @@
-let name = 'vinotha';
-// for(let letter of name){
-//     console.log(letter);
-// }
-
-for(let letter in name){
+let name = "vinotha";
+for(let letter of name){
     console.log(letter);
 }
+
+// for(let letter in name){
+//     console.log(letter);
+// }
 
 const student = {
     name: "vinotha",

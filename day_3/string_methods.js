@@ -14,7 +14,7 @@ let new_str = "      vinotha         ";
 console.log(new_str);       //      vinotha        
 console.log(new_str.trim());    //vinotha
 
-let str1 = 'hhelloworld';
+let str1 = 'helloworld';
 let str2 = 'world';
 
 console.log(str1.slice(0,4));       //index 4 will not be included      -- hell

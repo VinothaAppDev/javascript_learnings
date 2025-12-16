@@ -1,0 +1,39 @@
+*{
+  box-sizing: border-box;
+}
+*, *::before, *::after{
+  box-sizing: inherit;
+}
+
+html, body{
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  margin: 20px;
+}
+
+.header{
+  margin: 20px;
+  color: brown;
+}
+
+.activity, .propertyBox{
+  border: 2px solid black;
+  margin: 20px;
+  padding: 10px;
+}
+
+.propertyBox{
+  visibility: hidden;
+}
+
+#books{
+  border: 2px solid black;
+  margin: 20px;
+  padding: 10px;
+  h3{
+    color: blue;
+  }
+}
