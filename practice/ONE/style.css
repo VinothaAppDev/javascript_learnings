@@ -1,0 +1,35 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.btn{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+button{
+  margin: 12px;
+  width: 80px;
+  height: 30px;
+  background-color: green;
+  color: white;
+  font-weight: bold;
+}
+button:hover{
+  cursor: pointer;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 60px;
+}
+.container img{
+  width: 300px;
+}
+.container p{
+  font-size: 20px;
+  text-align: center;
+}

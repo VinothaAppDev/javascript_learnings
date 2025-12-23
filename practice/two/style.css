@@ -1,0 +1,32 @@
+.form{
+  border: 1px solid black;
+  width: 500px;
+  height: 200px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form .title{
+  text-align: center;
+  font-size: 18px;
+  font-weight: 800;
+  padding: 10px;
+  box-sizing: border-box;
+  color: red;
+}
+.submit-btn{
+  margin: 10px;
+  background-color: black;
+  color: white;
+  width: 100px;
+  height: 30px;
+  border-radius: 8px;
+}
+.submit-btn:hover{
+  cursor: pointer;
+}
+.form-item{
+  margin-bottom: 5px;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+    <style>
+      /* Add this media query */
+        @media (max-width: 400px) {
+            .form-container { width: 90%; padding: 20px; margin: 10px; }
+            body { padding: 20px; height: auto; }
+        }
+        
+        body { font-family: Arial; display: flex; justify-content: center; align-items: center; height: 100vh; background: #f0f0f0; }
+        .form-container { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); width: 300px; }
+        input { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ddd; border-radius: 5px; box-sizing: border-box; }
+        button { width: 100%; padding: 12px; background: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; }
+        button:hover { background: #0056b3; }
+        .error { color: red; display: none; }
+        .success { color: green; display: none; }
+        /* COMPLETE CSS: Add media query for mobile responsiveness (width < 400px) */
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Username" required>
+            <div id="usernameError" class="error">Username is required!</div>
+            <input type="password" id="password" placeholder="Password" required>
+            <div id="passwordError" class="error">Password is required!</div>
+            <button type="submit">Login</button>
+            <div id="successMsg" class="success">Login successful!</div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const usernameError = document.getElementById('usernameError');
+            const passwordError = document.getElementById('passwordError');
+            const successMsg = document.getElementById('successMsg');
+            
+            // RESET previous messages
+            usernameError.style.display = 'none';
+            passwordError.style.display = 'none';
+            successMsg.style.display = 'none';
+            
+            let isValid = true;
+            
+            // COMPLETE JS: Add validation logic - check if username/password empty, show errors or success
+            // Fixed validation
+            if (username.value.trim() === "") {
+                usernameError.style.display = 'block';
+                isValid = false;
+            }
+            if (password.value.trim() === "") {
+                passwordError.style.display = 'block';
+                isValid = false;
+            }
+
+            
+            if (isValid) {
+                successMsg.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>
