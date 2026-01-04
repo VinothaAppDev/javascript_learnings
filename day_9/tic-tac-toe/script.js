@@ -2,7 +2,7 @@ let boxes = document.querySelectorAll(".box");
 let resetBtn = document.querySelector(".reset");
 let result = document.querySelector(".result");
 let playerO = true;
-
+let clickCount = 0;
 const winPatterns = [
   [0, 1, 2],
   [3, 4, 5],
@@ -19,6 +19,7 @@ boxes.forEach((box) => {
     if(box.innerText !== "")  return;
     if(playerO){
       box.innerText = "O";
+      box.style.color = "darkblue";
       playerO = false;
     }
     else{
@@ -31,6 +32,13 @@ boxes.forEach((box) => {
 });
 
 const checkWinner = () => {
+    clickCount++;
+    if(clickCount == 9 && result.innerText == ""){
+      result.innerText = `😔 Draw 😒`;
+          result.style.display = "block";
+          disableAllBoxes();
+          return;
+    }
     for(pattern of winPatterns){
       // console.log(pattern);
       let box1 = boxes[pattern[0]].innerText;
