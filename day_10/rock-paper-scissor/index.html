@@ -9,28 +9,28 @@
 <body>
   <div class="title">Rock Paper Scissors</div>
   <div class="icons-container">
-    <div class="circle">
+    <div class="circle" id="stone">
       <img src="images/rock.png" alt="Stone">
     </div>  
-    <div class="circle">
+    <div class="circle" id="paper">
       <img src="images/paper.png" alt="Paper">
     </div>
-    <div class="circle">
+    <div class="circle" id="scissors">
       <img src="images/scissors.png" alt="Scissors">
     </div>
   </div>
   <div class="scores-box">
     <div class="score">
-      <div class="count">0</div>
+      <div class="count" id="playerScore">0</div>
       <div class="name">You</div>
     </div>
     <div class="score">
-      <div class="count">0</div>
+      <div class="count" id="compScore">0</div>
       <div class="name">Computer</div>
     </div>
   </div>
   <div class="result-container">
-      <div class="result">you win! rock beats scissors</div>
+      <div class="result" id="res-box">Start player by clicking your choice !!</div>
   </div>
   <script src="script.js"></script>
 </body>

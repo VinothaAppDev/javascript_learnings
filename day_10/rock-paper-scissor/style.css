@@ -79,5 +79,6 @@ img{
   border: none;
   border-radius: 16px;
   color: white;
+  font-weight: bold;
   font-size: 1rem;
 }
