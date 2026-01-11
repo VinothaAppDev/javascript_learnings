@@ -21,7 +21,7 @@ const arthy = {
 const mouli = {
   name: "moulika",
   dummyPrint(){
-    console.log(`moulika class`);
+    console.log(`moulika class`);   
   }
 }
 
